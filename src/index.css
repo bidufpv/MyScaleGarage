@@ -9,3 +9,9 @@ body{
   overflow-x: hidden;
   font-family: 'Times New Roman', Times, serif;
 }
+.text-justify {
+  text-align: justify;
+}
+.animatedButton{
+  animation-duration: 6000ms;
+}
