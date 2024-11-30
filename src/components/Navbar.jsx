@@ -4,6 +4,7 @@ console.log(import.meta.env.VITE_IMAGEKIT_URL_ENDPOINT); // Should print the URL
 import React, { useState } from 'react'
 import ImagekitIO from './ImagekitIO';
 import { Link } from 'react-router-dom';
+import { SignedIn,SignedOut,SignInButton,UserButton } from '@clerk/clerk-react';
 
 function Navbar() {
     const [open , setOpen] = useState(false)
@@ -47,9 +48,18 @@ function Navbar() {
       <Link to="">Trending🔥</Link>
       <Link to="">Most Popular🎉</Link>
       <Link to="">About💡</Link>
+
+      {/* signedout coming from clerk */}
+      
+      <SignedOut>
       <Link to="/Login" href="">
         <button className='py-2 px-4 rounded-3xl bg-blue-800 text-white'> Login👋</button>
       </Link>
+      </SignedOut>
+
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
       </div>
     </div>
   )
