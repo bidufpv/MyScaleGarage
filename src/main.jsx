@@ -8,31 +8,37 @@ import {Addpost} from './components/pages/Addpost';
 import {Register} from './components/pages/Register';
 import {Login} from './components/pages/Login';
 import {Userwritepage} from './components/pages/Userwritepage';
+import MainLayout from './components/layouts/MainLayout';
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <Home />
-  },
-  {
-    path: '/allpost',
-    element: <Allpost />
-  },
-  {
-    path: '/:slug',
-    element: <Addpost />
-  },
-  {
-    path: '/userwrite',
-    element: <Userwritepage />
-  },
-  {
-    path: '/register',
-    element: <Register />
-  },
-  {
-    path: '/login',
-    element: <Login />
+    element: <MainLayout/>,
+    children: [
+      {
+        path: '/',
+        element: <Home />
+      },
+      {
+        path: '/allpost',
+        element: <Allpost />
+      },
+      {
+        path: '/:slug',
+        element: <Addpost />
+      },
+      {
+        path: '/userwrite',
+        element: <Userwritepage />
+      },
+      {
+        path: '/register',
+        element: <Register />
+      },
+      {
+        path: '/login',
+        element: <Login />
+      }
+    ]
   }
 ]);
 
