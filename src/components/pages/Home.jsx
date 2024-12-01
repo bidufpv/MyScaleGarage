@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Categories from "../Categories";
+import FeaturedPosts from "../FeaturedPosts";
 
 export function Home() {
   return (
@@ -15,7 +16,7 @@ export function Home() {
       {/* INTRODUCTION */}
       <div className="flex items-center justify-between">
         {/* titles */}
-        <div className="max-w-2xl">
+        <div className="max-w-2xl px-4 md:px-8 lg:px-12">
           <h1 className="text-gray-800 text-2xl md:text-3xl lg:text-4xl font-bold">
             Porsche Carrera GT
           </h1>
@@ -86,6 +87,9 @@ export function Home() {
 
       {/* Categories */}
       <Categories/>
+
+      {/* featured posts */}
+      <FeaturedPosts/>
     </div>
   );
 }
