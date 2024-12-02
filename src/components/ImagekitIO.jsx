@@ -11,7 +11,12 @@ function ImagekitIO({src, className, width, height, description}) {
     width={width}
     height={height}
     description={description}
-
+    // transformation={[
+    //   {
+    //     width:w,
+    //     height:h,
+    //   }
+    // ]}
     
     
     />

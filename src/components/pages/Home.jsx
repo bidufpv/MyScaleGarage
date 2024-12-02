@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Categories from "../Categories";
 import FeaturedPosts from "../FeaturedPosts";
+import PostList from "../PostList";
 
 export function Home() {
   return (
@@ -90,6 +91,11 @@ export function Home() {
 
       {/* featured posts */}
       <FeaturedPosts/>
+
+      {/* PostList */}
+       <h1 className="my-8 text-2xl text-gray-600">Recent Posts</h1>
+       <PostList/>
     </div>
+
   );
 }
