@@ -9,7 +9,7 @@ import { SignedIn,SignedOut,SignInButton,UserButton } from '@clerk/clerk-react';
 function Navbar() {
     const [open , setOpen] = useState(false)
   return (
-    <div className='w-full h-16 md:h-20 flex items-center justify-between'>
+    <div className='w-full h-16 md:h-20 flex items-center justify-between '>
       
       {/* logo */}
       <Link to="/" className='flex items-center gap-4 text-2xl font-bold'>

@@ -5,7 +5,7 @@ import ImagekitIO from "./ImagekitIO";
 function FeaturedPosts() {
   return (
 
-    <div className="mt-8 flex flex-col lg:flex-row gap-8">
+    <div className="mt-8 flex flex-col lg:flex-row gap-8 px-4">
       {/* Main */}
       <div className="w-full lg:w-1/2 flex flex-col gap-4">
         <ImagekitIO

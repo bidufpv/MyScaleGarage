@@ -6,17 +6,17 @@ function ListItems() {
   return (
     <div className="flex flex-col xl:flex-row gap-8 items-center">
       {/* Image */}
-      <div className="xl:w-1/3">
+      <div className="xl:w-1/3 px-4">
         <ImagekitIO
           src="https://ik.imagekit.io/khqjdiqz7/ferrari.jpg?updatedAt=1733068226778"
           className="rounded-2xl object-cover w-full h-auto"
-          alt="Ferrari 458 Italia"
-        />
+          alt="Ferrari 458 Italia" width="800"  />
+      
       </div>
 
       {/* Details */}
-      <div className="flex flex-col gap-4 xl:w-2/3">
-        <Link to="/test" className="text-4xl font-semibold">
+      <div className="flex flex-col gap-4 xl:w-2/3 px-4 ">
+        <Link to="/test" className="text-2xl font-semibold ">
           Model Cars spec features pricepoint details
         </Link>
         <div className="flex items-center gap-2 text-slate-500 text-sm">
